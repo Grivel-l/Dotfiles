@@ -1,0 +1,30 @@
+[global_config]
+  extra_styling = False
+  handle_size = 0
+  inactive_color_offset = 0.888888888889
+  title_inactive_bg_color = "#4e9a06"
+[keybindings]
+  cycle_next = <Alt>n
+  new_terminator = None
+  new_window = <Primary>n
+  previous_profile = <Alt>m
+  split_horiz = <Shift><Alt>d
+  split_vert = <Alt>d
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    palette = "#000000:#e93030:#08bc38:#aa5500:#3465a4:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff3d3d:#46f93b:#ffff55:#4dc1fe:#ff55ff:#55ffff:#ffffff"
+    scrollbar_position = hidden
+    show_titlebar = False
