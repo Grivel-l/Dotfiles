@@ -1,3 +1,5 @@
-I3 config: `~/.config/i3/config`
+I3: `~/.config/i3/config`
 
-Terminator config: `~/.config/terminator/config`
+Polybar: `~/.config/polybar/config`
+
+Terminator: `~/.config/terminator/config`
