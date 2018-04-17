@@ -12,14 +12,15 @@ spacing = 1
 border-top-size = 5
 border-left-size = 5
 border-right-size = 5
+border-bottom-size = 3
 
-font-0 = fixed:pixelsize=12;1
-font-1 = FontAwesome:pixelsize=12;0
-font-2 = Wuncon Siji:pixelsize=30;0
+font-0 = fixed:pixelsize=12
+font-1 = FontAwesome:pixelsize=12
+font-2 = Wuncon Siji:size=15
 
 modules-left = 
 modules-center = date
-modules-right = battery volume powermenu
+modules-right = volume battery network powermenu
 
 ;tray-position = left
 ;tray-padding = 2
@@ -49,7 +50,6 @@ time-alt = %H:%M:%S
 
 label = %date% %time%
 format =   <label>
-format-background = #88000000
 format-padding = 3
 
 [module/battery]
@@ -122,41 +122,16 @@ menu-2-0 = power off?
 menu-2-0-exec = shutdown now
 menu-2-0-padding = 3
 
-[module/mpd]
-type = internal/mpd
+[module/network]
+type = internal/network
+interface = wlp2s0
 
-host = 127.0.0.1
-port = 6600
-password = 
-
-; Seconds to sleep between progressbar/song timer sync
-; Default: 1
-interval = 2
-
-; Available tags:
-;   <label-song> (default)
-;   <label-time>
-;   <bar-progress>
-;   <toggle> - gets replaced with <icon-(pause|play)>
-;   <toggle-stop> - gets replaced with <icon-(stop|play)>
-;   <icon-random>
-;   <icon-repeat>
-;   <icon-repeatone>
-;   <icon-prev>
-;   <icon-stop>
-;   <icon-play>
-;   <icon-pause>
-;   <icon-next>
-;   <icon-seekb>
-;   <icon-seekf>
-format-online =    <label-song>
-
-; Available tokens:
-;   %artist%
-;   %album%
-;   %date%
-;   %title%
-; Default: %artist% - %title%
-label-song = %title%
-format-online-padding = 3
-
+format-disconnected = <label-disconnected>
+label-disconnected = not connected
+format-connected = <ramp-signal>
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-5 = 
