@@ -1,14 +1,16 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
-export ANDROID_HOME=/opt/android-sdk-linux/
+#export DISPLAY=":0.0"
 
 alias cp="cp -v"
 alias files="nautilus"
+alias ls='ls --color=auto'
+alias grep='grep -n --color=auto'
 alias nodemon="nodemon --harmony"
+alias gcc="gcc -Wall -Wextra -Werror"
+alias hdmi='xrandr --output HDMI-1 --auto --right-of eDP-1'
 
-xhost +local:leo:root > 0
+export VISUAL="vim"
+export HISTTIMEFORMAT="%F %T "
+export ANDROID_HOME=/opt/android-sdk-linux/
 
 # If not running interactively, don't do anything
 case $- in
@@ -65,7 +67,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[00m\]$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]`git branch 2> /dev/null | /bin/grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[00m\]$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -83,11 +85,9 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi

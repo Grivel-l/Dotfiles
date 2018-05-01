@@ -235,3 +235,4 @@ bindsym $mod+Escape mode "$mode_system"
 
 # Others
 exec --no-startup-id albert
+exec --no-startup-id lxsession
