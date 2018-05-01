@@ -236,3 +236,4 @@ bindsym $mod+Escape mode "$mode_system"
 # Others
 exec --no-startup-id albert
 exec --no-startup-id lxsession
+bindsym Print exec --no-startup-id flameshot gui -p ~/Pictures/Screenshots
