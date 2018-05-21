@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/leo/Programmation/C/ft_ls/srcs'
+let g:netrw_dirhist_2='/home/leo/Programmation/C/ft_ls/includes'
+let g:netrw_dirhist_3='/home/leo/Programmation/C/ft_ls'
+let g:netrw_dirhist_4='/home/leo/Programmation/21sh/srcs/prompt'
+let g:netrw_dirhist_5='/home/leo/Programmation/21sh/srcs/command/heredoc'
