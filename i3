@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id TERMINAL=termite i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -179,11 +179,11 @@ bindsym $mod+r mode "resize"
 #		}
 #}
 #bindsym $mod+shift+h bar mode toggle
-exec --no-startup-id ~/.config/polybar/script.sh
+exec_always --no-startup-id ~/.config/polybar/script.sh
 
 # Gapps config
 default_border none
-gaps inner 7
+gaps inner 10
 gaps outer 0
 
 # XF86
@@ -205,9 +205,9 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/background.jpg
 bindsym $mod+l exec --no-startup-id ~/.config/lockscreen/lockscreen.sh
 
 # Audio
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +3%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -3%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Keyboard
 exec_always --no-startup-id xset r rate 150 50
@@ -232,8 +232,24 @@ mode "$mode_system" {
 }
 bindsym $mod+Escape mode "$mode_system"
 
+# Assignements
+assign [class="^Slack$"] 10
+assign [class="^TelegramDesktop"] 10
+
+# Start up apps
+exec --no-startup-id slack
+
+# I3 configs
+workspace_auto_back_and_forth yes
+focus_on_window_activation urgent
+bindsym $mod+z sticky toggle
+bindsym $mod+g focus mode_toggle
+bindsym $mod+bracketleft border pixel 10
+bindsym $mod+bracketright border none
+
 # Others
 exec --no-startup-id albert
 exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 bindsym Print exec --no-startup-id flameshot gui -p ~/Pictures/Screenshots
-exec --no-startup-id xbindkeys
+# exec --no-startup-id xbindkeys
+

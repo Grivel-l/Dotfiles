@@ -1,12 +1,17 @@
 #export DISPLAY=":0.0"
 
 alias cp="cp -v"
+alias mv="mv -v"
 alias files="nautilus"
 alias ls='ls --color=auto'
 alias grep='grep -n --color=auto'
 alias nodemon="nodemon --harmony"
 alias gcc="gcc -Wall -Wextra -Werror"
 alias hdmi='xrandr --output HDMI-1 --auto --right-of eDP-1'
+alias hdmi2="xrandr --output eDP-1 --primary --auto --output HDMI-1 --auto"
+alias loadLibs="export DYLD_LIBRARY_PATH=./lib/ && export DYLD_INSERT_LIBRARIES=libMalloc.so && export DYLD_FORCE_FLAT_NAMESPACE=1"
+alias unloadLibs="unset DYLD_LIBRARY_PATH && unset DYLD_INSERT_LIBRARIES && unset DYLD_FORCE_FLAT_NAMESPACE"
+alias diff="diff --color=always"
 
 export VISUAL="vim"
 export HISTTIMEFORMAT="%F %T "
