@@ -12,6 +12,7 @@ alias hdmi2="xrandr --output eDP-1 --primary --auto --output HDMI-1 --auto"
 alias loadLibs="export DYLD_LIBRARY_PATH=./lib/ && export DYLD_INSERT_LIBRARIES=libMalloc.so && export DYLD_FORCE_FLAT_NAMESPACE=1"
 alias unloadLibs="unset DYLD_LIBRARY_PATH && unset DYLD_INSERT_LIBRARIES && unset DYLD_FORCE_FLAT_NAMESPACE"
 alias diff="diff --color=always"
+alias :wq="exit"
 
 export VISUAL="vim"
 export HISTTIMEFORMAT="%F %T "
