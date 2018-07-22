@@ -182,7 +182,8 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/script.sh
 
 # Gapps config
-default_border none
+hide_edge_borders smart
+default_border pixel 7
 gaps inner 10
 gaps outer 0
 
