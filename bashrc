@@ -2,6 +2,7 @@
 
 alias cp="cp -v"
 alias mv="mv -v"
+alias dd="dd status=progress"
 alias files="nautilus"
 alias ls='ls --color=auto'
 alias grep='grep -n --color=auto'
