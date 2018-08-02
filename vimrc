@@ -6,4 +6,5 @@ set hlsearch
 set cursorline					"Highlight current line"
 set background=dark
 colorscheme hybrid
+set noswapfile
 
