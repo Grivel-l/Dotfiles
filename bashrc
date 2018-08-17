@@ -2,6 +2,7 @@
 
 alias cp="cp -v"
 alias mv="mv -v"
+alias rm="rm -v"
 alias dd="dd status=progress"
 alias files="nautilus"
 alias ls='ls --color=auto'
