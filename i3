@@ -239,6 +239,7 @@ assign [class="^TelegramDesktop"] 10
 
 # Start up apps
 exec --no-startup-id slack
+exec --no-startup-id telegram-desktop
 
 # I3 configs
 workspace_auto_back_and_forth yes
