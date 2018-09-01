@@ -3,6 +3,7 @@
 alias cp="cp -v"
 alias mv="mv -v"
 alias rm="rm -v"
+alias tar="tar -v"
 alias chmod="chmod -v"
 alias dd="dd status=progress"
 alias files="nautilus"
