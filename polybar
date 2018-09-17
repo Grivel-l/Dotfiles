@@ -56,6 +56,10 @@ label-focused-padding = 3
 label-unfocused = %index%
 label-unfocused-padding = 3
 
+label-urgent = %index%
+label-urgent-background = #389DFF
+label-urgent-padding = 3
+
 [module/date]
 type = internal/date
 ; Seconds to sleep between updates
