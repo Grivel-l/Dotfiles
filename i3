@@ -210,11 +210,9 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-# Keyboard
-exec_always --no-startup-id xset r rate 150 50
-
 # Compton
-exec_always --no-startup-id compton -e 0.8 --config ~/.config/compton.conf
+# exec_always --no-startup-id compton -e 0.8 --config ~/.config/compton.conf
+exec_always --no-startup-id xcompmgr -cf -D 3
 
 # Shutdown, reboot
 set $Locker i3lock && sleep 1
@@ -248,6 +246,9 @@ bindsym $mod+z sticky toggle
 bindsym $mod+g focus mode_toggle
 bindsym $mod+bracketleft border pixel 10
 bindsym $mod+bracketright border none
+
+# Keyboard
+exec_always --no-startup-id xset r rate 150 50
 
 # Others
 exec --no-startup-id albert
