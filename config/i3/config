@@ -250,6 +250,9 @@ bindsym $mod+bracketright border none
 # Keyboard
 exec_always --no-startup-id xset r rate 150 50
 
+# Touchpad
+exec --no-startup-id ./scripts/touchpad.sh
+
 # Others
 exec --no-startup-id albert
 exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
