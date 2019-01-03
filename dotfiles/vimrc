@@ -1,10 +1,17 @@
 sy on
 set nu
-set autoindent
-set ts=4
-set hlsearch
 set cursorline					"Highlight current line"
+set title
+
+set ts=4
+set autoindent
+set smartindent
+
+set hlsearch
+set smartcase					"No CamelCase search"
+set incsearch					"Incremental search"
+
 set background=dark
 colorscheme hybrid
-set noswapfile
 
+set formatoptions+=r			"Autocomment if previous line is a comment"
