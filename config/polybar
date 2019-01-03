@@ -9,10 +9,12 @@ underline-size = 2
 underline-color = #eee
 
 spacing = 1
-border-top-size = 0
-border-left-size = 0
-border-right-size = 0
+border-top-size = 3
+border-left-size = 3
+border-right-size = 3
 border-bottom-size = 0
+
+radius = 5
 
 font-0 = fixed:pixelsize=12
 font-1 = FontAwesome:pixelsize=12
@@ -49,7 +51,7 @@ label-mode-background = #ffb52a
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = #EE2222
+label-focused-background = #509269
 label-focused-padding = 3
 
 ; unfocused = Inactive workspace on any monitor
@@ -57,7 +59,7 @@ label-unfocused = %index%
 label-unfocused-padding = 3
 
 label-urgent = %index%
-label-urgent-background = #389DFF
+label-urgent-background = #5ca377
 label-urgent-padding = 3
 
 [module/date]

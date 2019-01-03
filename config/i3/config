@@ -211,7 +211,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Compton
-exec_always --no-startup-id compton -e 0.8 --config ~/.config/compton.conf
+exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Shutdown, reboot
 set $Locker i3lock && sleep 1
