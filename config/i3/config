@@ -259,3 +259,5 @@ exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agen
 bindsym Print exec --no-startup-id flameshot gui -p ~/Pictures/Screenshots
 # exec --no-startup-id xbindkeys
 
+# Applets
+exec --no-startup-id nm-applet

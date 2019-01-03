@@ -26,12 +26,7 @@ modules-left = i3
 modules-center = date
 modules-right = volume battery network powermenu
 
-;tray-position = left
-;tray-padding = 2
-;tray-background = #66333333
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+tray-position = right
 
 ; MODULES
 
@@ -152,17 +147,3 @@ menu-1-0-padding = 3
 menu-2-0 = power off?  
 menu-2-0-exec = shutdown now
 menu-2-0-padding = 3
-
-[module/network]
-type = internal/network
-interface = wlp2s0
-
-format-disconnected = <label-disconnected>
-label-disconnected = not connected
-format-connected = <ramp-signal>
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-5 = 
