@@ -8,6 +8,9 @@ set smartindent
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+autocmd FileType make setlocal noexpandtab
+autocmd FileType make setlocal shiftwidth=8
+autocmd FileType make setlocal softtabstop=8
 
 set hlsearch
 set smartcase					"No CamelCase search"
