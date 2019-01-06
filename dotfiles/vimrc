@@ -3,9 +3,11 @@ set nu
 set cursorline					"Highlight current line"
 set title
 
-set ts=4
 set autoindent
 set smartindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 
 set hlsearch
 set smartcase					"No CamelCase search"

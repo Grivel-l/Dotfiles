@@ -248,7 +248,7 @@ bindsym $mod+bracketright border none
 
 # Keyboard
 exec_always --no-startup-id xset r rate 150 50
-exec --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+exec_always --no-startup-id xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 # Touchpad
 exec --no-startup-id ./scripts/touchpad.sh
