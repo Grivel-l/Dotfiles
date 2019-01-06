@@ -208,7 +208,7 @@ exec --no-startup-id feh --bg-fill $I3_PREFIX/background.jpg
 
 # Lockscreen
 # exec --no-startup-id betterlockscreen -u ~/.config/i3/background.jpg
-# bindsym $mod+ctrl+l exec --no-startup-id ~/.config/lockscreen/lockscreen.sh
+bindsym $mod+ctrl+l exec --no-startup-id ~/.config/lockscreen/lockscreen.sh
 
 # HDMI
 bindsym $mod+XF86MonBrightnessDown exec --no-startup-id $I3_PREFIX/scripts/hdmi.sh
