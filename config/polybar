@@ -6,6 +6,8 @@ height = 30
 background = #5a000000
 foreground = #eee
 
+radius = 3
+
 underline-size = 2
 underline-color = #eee
 
@@ -14,8 +16,6 @@ border-top-size = 3
 border-left-size = 3
 border-right-size = 3
 border-bottom-size = 0
-
-radius = 5
 
 font-0 = fixed:pixelsize=12
 font-1 = FontAwesome:pixelsize=12
@@ -28,6 +28,7 @@ modules-center = date
 modules-right = volume battery network powermenu
 
 tray-position = right
+tray-padding = 10
 
 ; MODULES
 
