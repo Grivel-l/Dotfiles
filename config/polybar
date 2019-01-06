@@ -28,7 +28,10 @@ modules-center = date
 modules-right = volume battery network powermenu
 
 tray-position = right
-tray-padding = 10
+tray-padding = 2
+tray-detached = true
+tray-offset-x = -4
+padding-right = 15
 
 ; MODULES
 
