@@ -19,8 +19,6 @@ set incsearch					"Incremental search"
 set background=dark
 colorscheme hybrid
 
-set formatoptions+=r			"Autocomment if previous line is a comment"
-
 "Plugins"
 let g:ale_linters = {"javascript": ["eslint"]}
 let g:ale_linters_explicit = 1
