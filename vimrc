@@ -19,6 +19,11 @@ set incsearch					"Incremental search"
 set background=dark
 colorscheme hybrid
 
+"Copy/Paste between vim instances"
+nmap _Y :!echo "" > $HOME/.vi_tmp<CR><CR>:w! $HOME/.vi_tmp<CR>
+vmap _Y :w! $HOME/.vi_tmp<CR>
+nmap _P :r $HOME/.vi_tmp<CR>
+
 "Plugins"
 let g:ale_linters = {"javascript": ["eslint"]}
 let g:ale_linters_explicit = 1
