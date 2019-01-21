@@ -21,6 +21,9 @@ export HISTTIMEFORMAT="%F %T "
 export ANDROID_HOME=/opt/android-sdk-linux/
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[31m\]`git branch 2> /dev/null | /usr/bin/grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\[\033[00m\]$ '
 
+export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
