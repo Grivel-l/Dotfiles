@@ -13,7 +13,8 @@ autocmd FileType make setlocal shiftwidth=8
 autocmd FileType make setlocal softtabstop=8
 
 set hlsearch
-set smartcase					"No CamelCase search"
+set ignorecase
+set smartcase
 set incsearch					"Incremental search"
 
 set background=dark
