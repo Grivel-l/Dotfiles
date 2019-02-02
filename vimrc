@@ -1,7 +1,8 @@
 sy on
 set nu
 set cursorline					"Highlight current line"
-set title
+set laststatus=2
+set statusline=%t
 
 set autoindent
 set smartindent
