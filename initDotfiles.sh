@@ -1,6 +1,6 @@
 #!/bin/bash
 files=$(ls | xargs)
-if [ "$@" = "--replace" ]
+if [ "$1" = "--replace" ]
 then
     cmd="cp -v"
 elif [ "$1" = "--link" ]
