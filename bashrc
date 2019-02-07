@@ -14,6 +14,7 @@ alias gcc="gcc -Wall -Wextra -Werror"
 alias diff="diff --color=always"
 alias :wq="exit"
 alias cal="cal -Y"
+alias bc="bc -l"
 
 export VISUAL="vim"
 export HISTTIMEFORMAT="%F %T "
