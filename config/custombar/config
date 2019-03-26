@@ -1,0 +1,12 @@
+opacity = 40
+
+[workspaces]
+text-color = black
+current-workspace = #b9b9b9
+
+[volume]
+volume-icon = 
+
+[power]
+power-icon = 
+
