@@ -1,12 +1,18 @@
+[general]
+height = 33
 opacity = 40
 
 [workspaces]
-text-color = black
-current-workspace = #b9b9b9
+current-color = #b9b9b9
+click = true
 
 [volume]
-volume-icon = 
+icon = 
+scroll = true
 
 [power]
-power-icon = 
+icon = 
+
+[tray]
+padding = 5
 
