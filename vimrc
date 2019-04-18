@@ -2,6 +2,7 @@ sy on
 set nu
 set cursorline					"Highlight current line"
 set directory=$HOME/.vim/backups
+set ttimeoutlen=0
 
 set autoindent
 set smartindent
