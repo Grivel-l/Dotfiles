@@ -20,6 +20,10 @@ set ignorecase
 set smartcase
 set incsearch					"Incremental search"
 
+"Files search"
+set path +=**
+set wildmenu	"Display matching files when completing"
+
 "Colors"
 syntax on
 set background=dark
