@@ -21,7 +21,7 @@ set smartcase
 set incsearch					"Incremental search"
 
 "Files search"
-set path +=**
+set path +=./**
 set wildmenu	"Display matching files when completing"
 
 "Colors"
@@ -33,6 +33,9 @@ colorscheme hybrid
 set laststatus=2
 set statusline=%t
 hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
+
+"Alias"
+command MakeTags !ctags -R .
 
 "Plugins"
 
