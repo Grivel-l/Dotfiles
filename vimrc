@@ -21,7 +21,7 @@ set smartcase
 set incsearch					"Incremental search"
 
 "Files search"
-set path +=./**
+set path+=**
 set wildmenu	"Display matching files when completing"
 
 "Colors"
