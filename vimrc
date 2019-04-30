@@ -19,6 +19,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch					"Incremental search"
+set grepprg=grep\ -n\ $*\ -R\ .
 
 "Files search"
 set path+=**
