@@ -44,8 +44,3 @@ command MakeTags !ctags -R .
 let g:ale_linters = {"javascript": ["eslint"]}
 let g:ale_linters_explicit = 1
 
-"Copy/Paste between vim instances"
-nmap _Y :!echo "" > /tmp/.vim_tmp<CR><CR>:w! /tmp/.vim_tmp<CR>
-vmap _Y :w! /tmp/.vim_tmp<CR>
-nmap _P :r /tmp/.vim_tmp<CR>
-
