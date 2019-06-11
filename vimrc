@@ -19,7 +19,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch					"Incremental search"
-set grepprg=grep\ -n\ $*\ -R\ .\ --exclude-dir=node_modules
+set grepprg=grep\ -n\ $*\ -R\ .\ --exclude-dir=node_modules\ --exclude=tags
 
 "Files search"
 set path+=**
