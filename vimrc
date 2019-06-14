@@ -8,8 +8,8 @@ set ttimeoutlen=0
 set autoindent
 set smartindent
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 autocmd FileType make setlocal noexpandtab
 autocmd FileType make setlocal shiftwidth=8
 autocmd FileType make setlocal softtabstop=8
@@ -36,7 +36,7 @@ set statusline=%t
 hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 
 "Alias"
-command MakeTags !ctags -R .
+command MakeTags !ctags --exclude="*node_modules*" -R .
 
 "Plugins"
 
