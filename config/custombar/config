@@ -23,6 +23,3 @@ padding = 5
 [time]
 click = true
 
-[olkb]
-order = 100007268
-
