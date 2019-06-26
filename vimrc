@@ -38,9 +38,18 @@ hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 "Alias"
 command MakeTags !ctags --exclude="*node_modules*" -R .
 
+"Key mapping"
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 "Plugins"
 
 "Linters"
 let g:ale_linters = {"javascript": ["eslint"]}
 let g:ale_linters_explicit = 1
+let g:ale_fixers = {"javascript": ["prettier"]}
+let g:ale_fix_on_save = 1
 
