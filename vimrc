@@ -39,8 +39,6 @@ hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 command MakeTags !ctags --exclude="*node_modules*" -R .
 
 "Key mapping"
-inoremap ( ()<left>
-inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
