@@ -23,7 +23,9 @@ set grepprg=grep\ -n\ $*\ -R\ .\ --exclude-dir=node_modules\ --exclude=tags
 
 "Files search"
 set path+=**
-set wildmenu	"Display matching files when completing"
+set wildmenu
+set wildignorecase
+set wildmode=longest,list,full
 
 "Colors"
 syntax on
