@@ -44,11 +44,12 @@ hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 command MakeTags !ctags --exclude="*node_modules*" -R .
 
 "Key mapping"
+map <silent> <C-K> :set relativenumber! <Return>
+
+"Plugins"
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
-"Plugins"
 
 "Linters"
 let g:ale_linters = {"javascript": ["eslint"]}
