@@ -25,6 +25,7 @@ set incsearch					"Incremental search"
 set grepprg=grep\ -n\ $*\ -R\ .\ --exclude-dir=node_modules\ --exclude=tags
 
 "Files search"
+set shortmess-=S      "Count message"
 set path+=**
 set wildmenu
 set wildignorecase
