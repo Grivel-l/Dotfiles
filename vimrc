@@ -37,7 +37,9 @@ colorscheme hybrid
 
 "Status line"
 set laststatus=2
-set statusline=%t
+set statusline=%f     "Relative path"
+set statusline+=%=    "Align right"
+set statusline+=%p%%  "Percentage"
 hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 
 "Alias"
