@@ -12,4 +12,5 @@ alias gcc="gcc -Wall -Wextra -Werror"
 alias diff="diff --color=always"
 alias cal="cal -Y"
 alias bc="bc -l"
+alias objdump="objdump -M intel"
 
