@@ -35,6 +35,7 @@ set wildmode=longest,list,full
 syntax on
 set background=dark
 colorscheme hybrid
+set ft=xxd
 
 "Status line"
 set laststatus=2
