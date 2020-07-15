@@ -9,7 +9,7 @@ set showcmd
 
 "Indentation"
 set autoindent
-set smartindent
+set cindent
 set expandtab
 set shiftwidth=2
 set softtabstop=2
