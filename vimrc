@@ -2,10 +2,10 @@
 set nu
 set cursorline					"Highlight current line"
 set directory=$HOME/.vim/backups
-set ttimeoutlen=0
 set undofile
 set undodir=$HOME/.vim/undo
 set showcmd
+set ttimeoutlen=-1
 
 "Indentation"
 set autoindent
@@ -49,11 +49,8 @@ command MakeTags !ctags --exclude="*node_modules*" -R .
 
 "Key mapping"
 map <silent> <C-K> :set relativenumber! <Return>
-
-"Plugins"
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
 
 "Linters"
 let g:ale_linters = {"javascript": ["eslint"]}
