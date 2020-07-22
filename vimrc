@@ -5,7 +5,7 @@ set directory=$HOME/.vim/backups
 set undofile
 set undodir=$HOME/.vim/undo
 set showcmd
-set ttimeoutlen=-1
+set ttimeoutlen=0
 
 "Indentation"
 set autoindent
