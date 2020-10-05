@@ -1,5 +1,5 @@
 #!/bin/bash
-priority=`pactl list sinks | grep priority | cut -d ":" -f 3 | cut -d "," -f 1 | cut -d ")" -f 1 | xargs`
+priority=`pactl list sinks | grep priority | cut -d ":" -f 3 | grep -v "not available" | cut -d "," -f 1 | cut -d ")" -f 1 | xargs`
 lowest=`echo $priority | cut -d " " -f 1`
 for nbr in $priority;
 do
@@ -8,10 +8,9 @@ do
     lowest=$nbr;
   fi
 done
-sink=`pactl list sinks | grep -B 29 "priority: $lowest" | grep "Sink #" | cut -d "#" -f 2`
+sink=`pactl list sinks | grep -e "Sink" -e "priority: $lowest" | grep -B 1 "priority: $lowest" | grep "Sink #" | cut -d "#" -f 2`
 if [ "$1" = "up" ];
 then
-    echo $sink
     pactl set-sink-volume $sink +2%
 elif [ "$1" = "down" ];
 then
