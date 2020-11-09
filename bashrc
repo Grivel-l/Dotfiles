@@ -1,5 +1,5 @@
 bind -m vi-insert "\C-l":clear-screen
-bind -m vi-insert "\C-w":shell-backward-kill-word
+bind -m vi-insert "\C-w":backward-kill-word
 
 shopt -s histappend
 shopt -s globstar
