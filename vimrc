@@ -8,6 +8,7 @@ set showcmd
 set ttimeoutlen=0
 
 "Indentation"
+filetype indent on
 set autoindent
 set cindent
 set expandtab
@@ -61,4 +62,3 @@ let g:ale_fix_on_save = 1
 "EasyAlign"
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
