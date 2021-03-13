@@ -1,0 +1,5 @@
+ACTION="add", RUN+="/usr/bin/su user -c \"/home/user/.scripts/keyboard.sh disable\"", SUBSYSTEM=="usb", ATTRS{idVendor}=="feed", ATTRS{idProduct}=="6060", ATTRS{product}=="Planck"
+ACTION="remove", RUN+="/usr/bin/su user -c \"/home/user/.scripts/keyboard.sh enable\"", SUBSYSTEM=="usb", ATTRS{idVendor}=="feed", ATTRS{idProduct}=="6060", ATTRS{product}=="Planck"
+
+ACTION="add", RUN+="/usr/bin/su user -c \"/home/user/.scripts/keyboard.sh disable\"", SUBSYSTEM=="usb", ATTRS{idVendor}=="feed", ATTRS{idProduct}=="3060", ATTRS{product}=="DinkyDox"
+ACTION="remove", RUN+="/usr/bin/su user -c \"/home/user/.scripts/keyboard.sh enable\"", SUBSYSTEM=="usb", ATTRS{idVendor}=="feed", ATTRS{idProduct}=="3060", ATTRS{product}=="DinkyDox"
