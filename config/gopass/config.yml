@@ -7,5 +7,5 @@ nopager: false
 notifications: true
 parsing: true
 path: /home/user/.local/share/gopass/stores/root
-safecontent: false
+safecontent: true
 mounts: {}
