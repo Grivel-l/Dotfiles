@@ -13,4 +13,4 @@ alias diff="diff --color=always"
 alias cal="cal -Y"
 alias bc="bc -l"
 alias objdump="objdump -M intel"
-
+alias xclip="xclip -selection clipboard"
