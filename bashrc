@@ -20,3 +20,11 @@ then
 	tmux;
 fi
 
+sudo() {
+    if [ "$1" = "-4" ];
+    then 
+        command sudo -s
+        return 0
+    fi
+    command sudo "$@" 
+}
