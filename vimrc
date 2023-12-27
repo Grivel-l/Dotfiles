@@ -49,6 +49,8 @@ hi StatusLine ctermbg=NONE ctermfg=NONE cterm=NONE
 command MakeTags !ctags --exclude="*node_modules*" -R .
 
 "Key mapping"
+nnoremap <C-j> <C-a>
+nnoremap <C-h> <C-x>
 map <silent> <C-K> :set relativenumber! <Return>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
